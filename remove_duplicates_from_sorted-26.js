@@ -19,11 +19,14 @@ var removeDuplicates = function(nums) {
   // Update the original array in place
   for (let i = 0; i < value.length; i++) {
     nums[i] = value[i];
+    console.log("Added duplicate",nums[i]);
   }
 
   // Fill the rest of the array with underscores
   for (let i = value.length; i < nums.length; i++) {
     nums[i] = "_";
+    console.log("Add",  nums[i] = "_");
+
   }
 
   return value.length;
